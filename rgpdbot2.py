@@ -30,13 +30,15 @@ DetectorFactory.seed = 0  # Rendre langdetect déterministe
 # ------------------------ Configuration du Bot Telegram ---------------------
 # ---------------------------------------------------------------------------
 
-TELEGRAM_BOT_TOKEN = os.environ.get("7897397431:AAG3WfeN08D1cuKbC38gpGT3ejGoCi4zmLo")
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 if not TELEGRAM_BOT_TOKEN:
     raise RuntimeError("Environment variable TELEGRAM_BOT_TOKEN is required")
 
 
+
 # IMPORTANT : wkhtmltopdf doit être installé sur la machine
-WKHTMLTOPDF_PATH = r"C:\\Users\\J\\Downloads\\wkhtmltopdf\\bin\\wkhtmltopdf.exe"
+WKHTMLTOPDF_PATH = "/usr/bin/wkhtmltopdf"
+
 
 # ---------------------------------------------------------------------------
 # -------------------------- Textes multilingues ----------------------------
