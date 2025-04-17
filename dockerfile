@@ -29,4 +29,4 @@ COPY . .
 # VOLUME /app/static/reports
 
 # 9) Run your bot
-CMD ["python", "main.py"]
+CMD ["python", "rgpdbot2.py"]
